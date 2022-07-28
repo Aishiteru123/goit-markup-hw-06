@@ -259,7 +259,7 @@ html, body {
     }
     
     .modal svg:hover {
-        border: 1px solid #000;
+        fill: #2196F3;
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
@@ -270,7 +270,86 @@ html, body {
         border-radius: 50%;
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
+    .modal h3 {
+        font-family: Roboto;
+        font-style: normal;
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.03em;
+
+        color: #212121;
+        width: 448px;
+
+        margin-bottom: 12px;
+    }
+
+    .modal h4 {
+        font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    letter-spacing: 0.01em;
+
+    color: #757575;
+
+    margin-bottom: 4px;
+    }
+
+    .modal-container {
+        padding: 40px;
+    }
+
+    .textArea-modal {
+        width: 448px;
+        height: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+
+        margin-bottom: 10px;
+    }
+
+    .textArea-icon1 {
+        width: 12px;
+        height: 12px;
+
+        fill: #212121;
+    }
+
+    .textArea-modal2 {
+        width: 448px;
+        height: 120px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+
+        margin-bottom: 20px;
+    }
+
+    .modal label {
+        font-family: Roboto;
+        font-style: normal;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+
+        color: #757575;
+
+
+        width: 400.62px;
+
+
+    }
     
+    .modal label a {
+        color: #2196F3;
+    }
+
     .main-section-2 {
     display: flex;
     background-color: #FFFFFF;
@@ -689,6 +768,34 @@ html, body {
     color: #FFFFFF;
     margin-bottom: 20px;
     }
+
+    footer textarea {
+        width: 358px;
+        height: 50px;
+        background-color: #2F303A;
+        color: #FFFFFF;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+
+        margin-right: 12px;
+    }
+
+    .footer-email {
+        display: block;
+        float: left;
+        margin-left: 93px;
+        padding-top: 12px;
+    }
+
+    .footer-email ul {
+        display: flex;
+    }
+
+    .footer-email svg {
+        height: 24px;
+        width: 24px;
+    }
     
     .footer-social-links a {
     display: flex;
@@ -855,6 +962,28 @@ html, body {
     padding-left: 22px;
     padding-right: 22px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .button3 {
+        width: 200px;
+        height: 50px;
+        background: #2196F3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: 0;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+
+        cursor: pointer;
     }
     
     .button2:hover,
