@@ -22,6 +22,10 @@ html, body {
     ul { list-style: none; padding-left: 0; margin: 0; }
     
     h1, h2, h3, h4, h5, h6, p { margin: 0; }
+
+    textarea {
+        resize: none;
+    }
     
     
     header {
@@ -304,51 +308,61 @@ html, body {
         padding: 40px;
     }
 
-    .textArea-modal {
+    .contact-form-input {
         width: 448px;
         height: 40px;
+
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
 
         margin-bottom: 10px;
+
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        padding-left: 16px;
     }
 
-    .textArea-icon1 {
-        width: 12px;
-        height: 12px;
-
-        fill: #212121;
+    .contact-form-input:hover ,
+    .contact-form-input:focus {
+        border: 1px solid #2196F3;
+        border-radius: 4px;
     }
 
-    .textArea-modal2 {
+    .contact-form-message:hover ,
+    .contact-form-message:focus {
+        border: 1px solid #2196F3;
+        border-radius: 4px;
+    }
+
+    .contact-form-message {
         width: 448px;
         height: 120px;
+
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
 
+        padding-top: 12px;
+        padding-left: 16px;
+
         margin-bottom: 20px;
+
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .modal label {
-        font-family: Roboto;
-        font-style: normal;
-        text-align: center;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 0.03em;
-
-        color: #757575;
-
-
-        width: 400.62px;
-
-
+    .contact-form-checkbox {
+        margin-right: 8px;
     }
-    
-    .modal label a {
+
+    .modal-container label a{
         color: #2196F3;
     }
+
+    .contact-form-btn-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+
 
     .main-section-2 {
     display: flex;
@@ -779,6 +793,9 @@ html, body {
         border-radius: 4px;
 
         margin-right: 12px;
+
+        padding-top: 15px;
+        padding-left: 16px;
     }
 
     .footer-email {
@@ -795,6 +812,7 @@ html, body {
     .footer-email svg {
         height: 24px;
         width: 24px;
+        margin-left: 10px;
     }
     
     .footer-social-links a {
@@ -972,7 +990,7 @@ html, body {
         border-radius: 4px;
         border: 0;
 
-        font-family: 'Roboto';
+        font-family: Roboto;
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
@@ -984,6 +1002,10 @@ html, body {
         color: #FFFFFF;
 
         cursor: pointer;
+
+        display: flex;
+
+        padding-left: 28px;
     }
     
     .button2:hover,

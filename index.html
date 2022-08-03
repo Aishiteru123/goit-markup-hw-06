@@ -26,15 +26,47 @@
 
       <div class="modal-container">
         <h3>Оставьте свои данные,мы вам перезвоним</h3>
-        <h4>Имя</h4>
-        <textarea class="textArea-modal"></textarea>
-        <h4>Телефон</h4>
-        <textarea class="textArea-modal"></textarea>
-        <h4>Почта</h4>
-        <textarea class="textArea-modal"></textarea>
-        <h4>Комментарий</h4>
-        <textarea class="textArea-modal2"></textarea>
-        <input type="checkbox"> <label>Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+        <form class="contact-form">
+          <h4>Имя</h4>
+          <input
+            type="text"
+            class="contact-form-input"
+            name="user_name"
+            required
+            minlength="2"
+            pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$"
+          />
+
+          <h4>Телефон</h4>
+          <input
+            type="tel"
+            class="contact-form-input"
+            name="user_phone"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="xxx-xxx-xx-xx"
+          />
+          
+          <h4>Почта</h4>
+          <input
+            type="email"
+            class="contact-form-input"
+            name="user_email"
+            required
+          />
+
+          <h4>Комментарий</h4>
+          <textarea
+            name="user_message"
+            class="contact-form-message"
+            placeholder="Оставьте комментарий..."
+          ></textarea>
+
+          <label>
+            <input type="checkbox" name="user_agree" class="contact-form-checkbox" /> Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+          </label>
+
+        </div>
       </div>
 
     </div>
@@ -458,7 +490,7 @@
         <h3>Подпишитесь на рассылку</h3>
         <ul>
             <li>
-                <textarea></textarea>
+                <textarea name="E-mail" placeholder="E-mail" maxlength="35"></textarea>
             </li>
 
             <li>
