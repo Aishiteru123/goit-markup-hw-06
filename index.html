@@ -27,7 +27,8 @@
       <div class="modal-container">
         <h3>Оставьте свои данные,мы вам перезвоним</h3>
         <form class="contact-form">
-          <h4>Имя</h4>
+          <h4 class="name-text">Имя</h4>
+          <div class="modal-hover-focus">
           <input
             type="text"
             class="contact-form-input"
@@ -37,7 +38,13 @@
             pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$"
           />
 
-          <h4>Телефон</h4>
+          <svg class="modal-icon modal-icon-1">
+            <use href="./images/icons.svg#icon-Human"></use>
+          </svg>
+        </div>
+
+          <h4 class="name-text">Телефон</h4>
+          <div class="modal-hover-focus">
           <input
             type="tel"
             class="contact-form-input"
@@ -46,8 +53,14 @@
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
             title="xxx-xxx-xx-xx"
           />
+
+          <svg class="modal-icon modal-icon-2">
+            <use href="./images/icons.svg#icon-Telefon"></use>
+          </svg>
+        </div>
           
-          <h4>Почта</h4>
+          <h4 class="name-text">Почта</h4>
+          <div class="modal-hover-focus">
           <input
             type="email"
             class="contact-form-input"
@@ -55,7 +68,12 @@
             required
           />
 
-          <h4>Комментарий</h4>
+          <svg class="modal-icon modal-icon-3">
+            <use href="./images/icons.svg#icon-Konvert"></use>
+          </svg>
+        </div>
+
+          <h4 class="name-text">Комментарий</h4>
           <textarea
             name="user_message"
             class="contact-form-message"
@@ -63,8 +81,15 @@
           ></textarea>
 
           <label>
-            <input type="checkbox" name="user_agree" class="contact-form-checkbox" /> Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+            <input type="checkbox" name="user_agree" class="contact-form-checkbox" /> <h4 class="name-check">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></h4>
           </label>
+
+          <div class="button-pos2">
+            <button class="button4" type="submit">Отправить</button>
+          </div>
+          
+
+          </form>
 
         </div>
       </div>
@@ -490,7 +515,15 @@
         <h3>Подпишитесь на рассылку</h3>
         <ul>
             <li>
-                <textarea name="E-mail" placeholder="E-mail" maxlength="35"></textarea>
+                <form>
+                    <input
+                      type="email"
+                      class="contact-form-input"
+                      name="user_email"
+                      placeholder="E-mail"
+                      required
+                    />
+                </form>
             </li>
 
             <li>
