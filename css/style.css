@@ -314,6 +314,7 @@ html, body {
         font-family: Roboto;
         font-style: normal;
         font-weight: 400;
+        line-height: 17px;
         font-size: 14px;
         letter-spacing: 0.03em;
 
@@ -404,9 +405,17 @@ html, body {
     }
 
     .contact-form-checkbox {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 15px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 4px;
         margin-right: 8.38px;
         margin-left: 12px;
         cursor: pointer;
+        background-image: url(../images/Vectordisabled.svg);
     }
 
     .modal-container label a{
