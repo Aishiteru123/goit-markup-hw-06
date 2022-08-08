@@ -405,29 +405,16 @@ html, body {
     }
 
     .contact-form-checkbox {
-        content: "";
-        display: block;
         width: 16px;
         height: 15px;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 4px;
         margin-right: 8.38px;
         margin-left: 12px;
         cursor: pointer;
-        background-image: url(../images/Vectordisabled.svg);
     }
 
     .modal-container label a{
         color: #2196F3;
     }
-
-    .contact-form-btn-wrapper {
-        display: flex;
-        justify-content: center;
-    }
-
-
 
     .main-section-2 {
     display: flex;
